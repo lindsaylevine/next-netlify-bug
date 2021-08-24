@@ -1,4 +1,12 @@
 # netlify.toml
+
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
 [functions]
   # Specifies `esbuild` for functions bundling
   node_bundler = "esbuild"
